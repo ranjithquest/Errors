@@ -8,9 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["'Segoe UI'", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        mono: ["'Cascadia Code'", "'Consolas'", "monospace"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "var(--bg)",
+        surface: "var(--surface)",
+        "text-primary": "var(--text-primary)",
+        "text-secondary": "var(--text-secondary)",
+        "text-tertiary": "var(--text-tertiary)",
+        accent: "var(--accent)",
+      },
+      borderColor: {
+        DEFAULT: "var(--border)",
+        mid: "var(--border-mid)",
       },
     },
   },
